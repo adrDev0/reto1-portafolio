@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mascotas - Gatitos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/font-awesome-all.min.css">
 </head>
@@ -30,10 +29,26 @@
         <section>
             <h2>Nuestros Gatitos</h2>
             <div class="gallery">
-                <img src="imgs/gato-naranja.webp" alt="Gatito Naranja" loading="lazy">
-                <img src="imgs/gato-negro.webp" alt="Gatito Negro" loading="lazy">
-                <img src="imgs/gato-grisblanco.webp" alt="Gatito Gris y Blanco" loading="lazy">
-                <img src="imgs/gato-gris.webp" alt="Gatito Gris" loading="lazy">
+                <picture>
+                    <source srcset="imgs/gato-naranja-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-naranja.webp">
+                    <img src="imgs/gato-naranja.webp" alt="Gatito Naranja" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="imgs/gato-negro-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-negro.webp">
+                    <img src="imgs/gato-negro.webp" alt="Gatito Negro" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="imgs/gato-grisblanco-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-grisblanco.webp">
+                    <img src="imgs/gato-grisblanco.webp" alt="Gatito Gris y Blanco" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="imgs/gato-gris-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-gris.webp">
+                    <img src="imgs/gato-gris.webp" alt="Gatito Gris" loading="lazy">
+                </picture>
             </div>
         </section>
 
@@ -59,25 +74,6 @@
             </form>
         </section>
 
-        <section>
-            <h2>Contenido Extra Grande</h2>
-            <p>Esta sección tiene un contenido muy grande que no es necesario para la página, con información adicional, imágenes y videos.</p>
-            <img src="https://placekitten.com/1200/800" alt="Imagen grande de un gatito" loading="lazy">
-            <p>El gato doméstico (Felis catus) es un miembro pequeño de la familia Felidae. Los gatos son valorados por los seres humanos por su compañía y su habilidad para cazar plagas como roedores. Los gatos domésticos son similares en tamaño y anatomía a los otros felinos, con cuerpos fuertes, flexibles y dientes y garras diseñados para matar a presas pequeñas.</p>
-            <video controls loading="lazy">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
-            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" loading="lazy"></iframe>
-        </section>
-
-        <section class="external-script">
-            <h2>¡Descubre Más en Nuestro Sitio Web Externo!</h2>
-            <p>Explora más contenido interesante y útil sobre el cuidado de los gatitos en nuestro sitio web externo. Encontrarás artículos, videos y recursos que te ayudarán a cuidar mejor a tu mascota. Haz clic en el enlace a continuación para visitar nuestro sitio web asociado y descubrir más.</p>
-            <p>En nuestro sitio web externo, podrás encontrar guías detalladas sobre la nutrición adecuada para gatos, consejos para el entrenamiento y comportamiento felino, y muchas historias de éxito de otros amantes de los gatos. Además, ofrecemos una comunidad donde puedes interactuar con otros dueños de gatos, compartir tus experiencias y obtener apoyo.</p>
-            <p>No te pierdas nuestros videos educativos que cubren una variedad de temas, desde cómo jugar de manera segura con tu gato hasta cómo identificar y tratar problemas de salud comunes. ¡Visítanos ahora y mejora la vida de tu gatito!</p>
-        </section>
-
         <section class="gif-gallery">
             <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Gatito GIF 1" loading="lazy">
             <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito GIF 2" loading="lazy">
@@ -92,8 +88,7 @@
         <p>&copy; 2024 Gatitos Encantadores</p>
         <p>Todos los derechos reservados.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+
+    <script src="js/main.min.js" defer></script>
 </body>
 </html>
